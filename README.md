@@ -49,6 +49,12 @@ make format
 ### Endpoints
 
 - `GET /health` - Vérification de santé du service
+- `GET /wallets/<user_id>` - Récupération du portefeuille et de l'historique
+- `POST /wallets/<user_id>/topup` - Créditer un portefeuille
+- `POST /wallets/<user_id>/spend` - Débiter un portefeuille avec validation de solde
+- `GET /wallets/<user_id>/transactions` - Historique détaillé des transactions
+- `GET /gacha/pools` - Liste des pools disponibles avec leurs récompenses
+- `POST /gacha/draw` - Tirage gacha avec consommation automatique des fonds
 
 ### Format des Réponses
 
